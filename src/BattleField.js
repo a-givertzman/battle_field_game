@@ -5,6 +5,7 @@ class BattleField {
     _selector = '';
     _elem;
     _size;
+    _items = [];
     constructor({
         selector = '',
         size = 10,
@@ -14,15 +15,22 @@ class BattleField {
         this._size = size;
         this._elem = document.querySelector(this._selector);
         for (let y = 0; y < this._size; y++) {
-            let tr = document.createElement('tr');
-            tr.classList.add('battlefield-row');
-            this._elem.appendChild(tr);
-            console.log('[BattleField] tr:', tr);
+            let tr = new HtmlElement({
+                parent: this._elem,
+                classList: ['battlefield-row',],
+                tag: 'tr',
+                content: '',
+            });
             for (let x = 0; x < this._size; x++) {
-                let td = document.createElement('td');
-                td.classList.add('battlefield-item');
-                td.innerHTML = `${y}:${x}`;
-                tr.appendChild(td);
+                let item = new BattleFieldItem({
+                    element: new HtmlElement({
+                        parent: tr,
+                        classList: ['battlefield-item',],
+                        tag: 'td',
+                        content: `${y}:${x}`,
+                    }),
+                });
+                this._items.push(item);
             }
         }
     }

@@ -1,10 +1,12 @@
 /**
  * Класс реализует клетку игрового поля
  */
- class BattleFieldDock {
+class BattleFieldItem {
+    _elem;
     constructor({
-        selector = '',
+        element = {},
     }) {
-        console.log('[BattleFieldDock] selector:', selector);
+        console.log('[BattleFieldItem]');
+        this._elem = element;
     }
 }
