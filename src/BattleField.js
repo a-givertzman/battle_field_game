@@ -21,7 +21,7 @@ class BattleField {
             for (let x = 0; x < this._size; x++) {
                 let td = document.createElement('td');
                 td.classList.add('battlefield-item');
-                td.innerHTML = `${x}:${y}`;
+                td.innerHTML = `${y}:${x}`;
                 tr.appendChild(td);
             }
         }
