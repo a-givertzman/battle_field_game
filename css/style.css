@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	box-sizing: border-box;
+}
+ 
+body {
+	width: 100vw;
+	position: absolute;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.js__td-backgroundhover {
+	background-color: red;
+}
+
+.app {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: -200px;
+}
+
+.app-header {
+	text-align: center;
+	padding: 30px;
+}
+
+.app-body {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.app-subtitle {
+	color: gray;
+}
+
+.app-link {
+	text-decoration: none;
+	color: #02025c;
+}
+
+.battlefield-row {
+	display: flex;
+	flex-grow: 1;
+}
+
+.battlefield {
+	position: relative;
+}
+
+.battlefield-table {
+	border-spacing: 0;
+	width: 330px;
+	height: 330px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.battlefield-item {
+	flex: 0 0 10%;
+	height: 100%;
+	position: relative;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.battlefield-item__active {
+	background: rgba(123, 121, 255, 0.2);
+}
+
+.marker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.battlefield-status {
+	text-align: center;
+	padding: 20px;
+}
+
+.marker-row {
+	left: -35px;
+}
+
+.marker-column {
+	top: -35px;
+}
+
+.ship {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #00bfff;
+	width: 29px;
+	height: 29px;
+	margin-left: 1px;
+}
+
+
+
+.ship-row-2 {
+	width: 61px;
+}
+
+.ship-row-3 {
+	width: 96px;
+}
+
+.ship-row-4 {
+	width: 125px;
+	position: absolute;
+}
+
+.ship-column-1 {
+}
+
+.ship-column-2 {
+	height: 61px;
+}
+
+.ship-column-3 {
+	height: 96px;
+}
+
+.ship-column-4 {
+	height: 125px;
+}
+
+.app-actions {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.app-action {
+	width: 210px;
+	padding: 10px;
+}
+
+.shot {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.shot-missed {
+	/* color: gray; */
+	padding: 4px;
+}
+
+.shot-wounded {
+	background: #fbdede;
+	z-index: 1;
+	width: 32px;
+	height: 32px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+
+
+.shot-killed {
+	background: #fbdede;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.hidden {
+	display: none;
+}
