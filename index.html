@@ -13,8 +13,10 @@
 	<div class="app">
 		<div class="app-body">
 			<div data-side="player">
-
-
+				<div class="battlefield">
+					<table class="battlefield-table">
+					</table>
+				</div>
 			</div>
 			<div class="app-menu">
 				<div class="app-actions" data-scene="preparation">
@@ -50,11 +52,23 @@
 				</div>
 			</div>
 			<div data-side="opponent">
-
+				<div class="battlefield">
+					<table class="battlefield-table">
+					</table>
+				</div>			
+				<div class="battlefield-dock">
+				</div>
+				<div class="battlefield-polygon">
+				</div>
 			</div>
 		</div>
 	</div>
 
+  <script src="src/BattleFieldDock.js"></script>
+  <script src="src/BattleField.js"></script>
+  <script src="src/Action.js"></script>
+  <script src="src/AppActions.js"></script>
+  <script src="src/Application.js"></script>
   <script src="src/main.js"></script>
 
 </body>
