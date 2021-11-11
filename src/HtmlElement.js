@@ -7,8 +7,8 @@ class HtmlElement {
     _parent;
     _elem;
     constructor({
-        parent: {}, /** Селектор родителя */
-        classList: [],
+        parent = {}, /** Селектор родителя */
+        classList = [],
         tag = 'div',
         content = '',
     }) {
@@ -19,8 +19,9 @@ class HtmlElement {
         });
         this._elem.innerHTML = content;
         this._parent.appendChild(this._elem);
+        return this._elem;
     }
-    appendChild(element) {
-        this._elem.appendChild(element);
-    }
+    // appendChild(element) {
+    //     this._elem.appendChild(element);
+    // }
 }
