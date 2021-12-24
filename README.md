@@ -1,6 +1,8 @@
 # The game Battle Field
 Web application based on pure js and Elegant Objects idea.
 
+https://a-givertzman.github.io/battle_field_game/
+
 ## Game details
 First action - application prepare game field on randome place,ent of sheeps or by user choice.
 Second action - game action, user make a step by clicking on the enemy field, 
